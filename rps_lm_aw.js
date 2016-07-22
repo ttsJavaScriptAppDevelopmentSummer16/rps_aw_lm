@@ -3,28 +3,29 @@ var onePlayerName = "Latori";
 var twoPlayerName = "Amy";
 var oneScore = 0;
 var twoScore = 0;
-var weapons = ["rock" , "paper", "scissors"];
+var weapons = ["a rock" , "paper", "scissors"];
 
 while (oneScore < 3 && twoScore < 3){
   console.log("Rock, Paper, Scissors Shoot!");
   console.log("Anything you want to do! :-)");
-  console.log(onePlayerName +" has " + oneWeaponOfChoice);
-  console.log(twoPlayerName + " has " + twoWeaponOfChoice);
+
   var oneWeaponOfChoice = weapons[parseInt(Math.random()*weapons.length) %3];
   var twoWeaponOfChoice = weapons[parseInt(Math.random()*weapons.length) %3];
-    if (oneWeaponOfChoice === "rock" && twoWeaponOfChoice === "paper"){
+  console.log(onePlayerName +" has " + oneWeaponOfChoice);
+  console.log(twoPlayerName + " has " + twoWeaponOfChoice);
+    if (oneWeaponOfChoice === "a rock" && twoWeaponOfChoice === "paper"){
       console.log(twoPlayerName + " wins this round!");
       twoScore++;
-    } else if (oneWeaponOfChoice === "paper" && twoWeaponOfChoice === "rock"){
+    } else if (oneWeaponOfChoice === "paper" && twoWeaponOfChoice === "a rock"){
       console.log (onePlayerName + " wins this round!");
       oneScore++;
-    } else if (oneWeaponOfChoice === "scissors" && twoWeaponOfChoice === "rock"){
+    } else if (oneWeaponOfChoice === "scissors" && twoWeaponOfChoice === "a rock"){
       console.log(twoPlayerName + " wins this round!");
       twoScore++;
     } else if (oneWeaponOfChoice === "scissors" && twoWeaponOfChoice === "paper"){
       console.log (onePlayerName + " wins this round!");
       oneScore++;
-    } else if (oneWeaponOfChoice === "rock" && twoWeaponOfChoice === "scissors"){
+    } else if (oneWeaponOfChoice === "a rock" && twoWeaponOfChoice === "scissors"){
       console.log(onePlayerName + " wins this round!");
       oneScore++;
     } else if (oneWeaponOfChoice === "paper" && twoWeaponOfChoice === "scissors"){
